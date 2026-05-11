@@ -6,6 +6,10 @@ body{
 header{
     text-align: center;
 }
+h1{
+    font-size: 22px;
+    font-weight: bold;
+}
 .navigation{
     text-align: left;
 }
@@ -37,7 +41,7 @@ h2{
 }
 #Experience{
     background-color: rgb(44, 205, 151);
-    margin: 15px, auto;
+    margin: 15px auto;
     border: solid 1px teal;
     padding: 15px;
 }
@@ -62,6 +66,6 @@ h2{
     width:120px;
      height:120px;
 }
-#Connect{
+#Connect ul{
     display:flex;
 }
