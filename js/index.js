@@ -1,9 +1,11 @@
 
 let today = new Date();
 let thisYear = today.getFullYear();
-let footer = document.querySelector("footer");
+let footer = document.createElement('footer');
 let copyright = document.createElement("p");
+let body = document.querySelector("body");
 copyright.innerHTML = `&copy; ${thisYear} Marina Nosova`;
+body.appendChild(footer);
 footer.appendChild(copyright);
 
 let skills = [ "JavaScript", "HTML", "CSS", "GitHub","Agile & Scrum Frameworks","Project Planning & Execution",
