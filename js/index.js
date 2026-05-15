@@ -13,7 +13,7 @@ let skills = [ "JavaScript", "HTML", "CSS", "GitHub","Agile & Scrum Frameworks",
 	"Cross-platform testing expertise: iOS, Android, Web, and POS environments","Splunk","XML","SOAP","REST API","Testlink",
 	"Usability testing","Postman","Performance testing","Load testing","Defect analysis and management","Risk-based testing"]
 
-let skillSection = document.querySelector("#Skills");
+let skillSection = document.querySelector("#skills");
 let skillsList = skillSection.querySelector("ul");
 for (let i = 0; i<skills.length; i++){
     let skill = document.createElement("li");

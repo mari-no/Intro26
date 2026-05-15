@@ -70,12 +70,12 @@ h2{
     display:flex;
 }
 
-#Skills {
+#skills {
     max-width: 1600px;
     margin: 15px auto;
 }
 
-#Skills ul {
+#skills ul {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -83,14 +83,14 @@ h2{
     padding: 0;
     justify-content: center;
 }
-#Skills li {
+#skills li {
     background: rgb(143, 235, 242);
     padding: 10px 15px;
     border-radius: 1px;
 }
 
 @media (max-width: 600px) {
-    #Skills ul {
+    #skills ul {
         flex-direction: column;
     }
 }
