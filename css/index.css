@@ -1,0 +1,71 @@
+body{
+    background-color: rgb(213, 239, 230);
+    font-family: "Sofia", sans-serif;
+    color: darkgreen; 
+}
+header{
+    text-align: center;
+}
+h1{
+    font-size: 22px;
+    font-weight: bold;
+}
+.navigation{
+    text-align: left;
+}
+#About{
+    width: 500px;
+    padding: 5px 10px;
+    margin: 15px auto;
+}
+h2{
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    color:rgb(2, 62, 62);
+}
+.elements{
+
+    margin:15px 15px;
+    padding: 25px 25px;
+    justify-content: center
+   
+   
+}
+#Connect{
+    width: 300px;
+    background-color: rgb(44, 205, 151);
+    border: solid 1px teal;
+    margin:15px auto;
+    
+}
+#Experience{
+    background-color: rgb(44, 205, 151);
+    margin: 15px auto;
+    border: solid 1px teal;
+    padding: 15px;
+}
+.job {
+    margin-bottom: 20px;
+}
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-header h3 {
+    margin: 0;
+}
+    
+.logo{
+    width: 17px;
+    height: 17px;
+}
+.photo{
+    width:120px;
+     height:120px;
+}
+#Connect ul{
+    display:flex;
+}

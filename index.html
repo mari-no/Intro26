@@ -3,50 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-    body {
-      background-color: rgb(13, 196, 168);
-    }
-    h1 {
-      color: rgb(17, 17, 146);
-      margin-left: 20px;
-    }
-  </style>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"/>
+   
     <title>Marina's Portfolio</title>
+  
+    <link rel = "stylesheet" href = "css/index.css"/>
 </head>
 <body>
+ 
+<header>
     <h1>Marina Nosova</h1>
+    <img class="photo" src ="images/me.jpg" alt="My picture" />
+<nav class = "navigation">
+    <ul>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Experience">Experience</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Connect">Connect</a></li>
+    </ul>
+ </nav>
+</header>
 <section id = "About">
     <h2>About</h2>
     <p>Former Software QA Engineer, now I'm learning to code with Code the Dream</p>
 </section>
 
+<div class="elements">
 <section id ="Experience">
-    <h2>
-        <strong>Experience</strong></h2>
-    <ul>
-        <li><strong>Intro to Programming</strong> - <em>Code the Dream</em></li>
-        <li>HTML and CSS</li>
-        <li>Manual and Auto testing</li>
-        <li>Test Management</li>
-        <li>Selenium WebDriver</li>
-        <li>ISTQB Certification</li>
-        <li>Project Management Certification</li>
-       
-    </ul>
+    <h2>Experience</h2>
+     <div class="job">
+        <div class="job-header">
+            <h3>Senior QA engineer & Project Manager</h3>
+            <span class="date">05/2025– Present</span>
+        </div>
+        <p>Designed and executed structured test plans, developed test scenarios, and analyzed results to ensure software quality and safety. Led project coordination in a startup environment while documenting defects, reporting outcomes, and supporting cross-functional teams.</p>
+    </div>
+
+    <div class="job">
+        <div class="job-header">
+            <h3>Senior QA Engineer, project manager</h3>
+            <span class="date">04/2021 - 03/2024 </span>
+        </div>
+        <p>Managed cross-functional teams to ensure quality and delivery of a shipping platform’s online and mobile applications.</p>
+    </div>
+    <div class="job">
+        <div class="job-header">
+            <h3>Senior QA Engineer</h3>
+            <span class="date">04/2015 - 04/2021</span>
+        </div>
+        <p>Led the QA team for the Swiss Railway Online Ticketing System, ensuring stability and seamless user experience for millions.
+Introduced automated testing frameworks using Selenium WebDriver, JUnit, and API testing.</p>
+    </div>
+    <div class="job">
+        <div class="job-header">
+            <h3>QA Engineer</h3>
+            <span class="date">11/2013- 04/2015</span>
+        </div>
+        <p>Led quality assurance for a comprehensive Educational Platform in St. Petersburg, aimed at streamlining interactions among principals, teachers, parents, and students. </p>
+    </div>
+    <div class="job">
+        <div class="job-header">
+            <h3>Junior QA Engineer</h3>
+            <span class="date">02/2013 - 11/2013</span>
+        </div>
+        <p>Created test strategies for high-loaded hospital system, provided E2E testing (using both manual and automated testing), assisted with UAT testing and led support and educational training for hospital teams. Provided recommendations on how to improve user experience of product features.</p>
+    </div>
+   
+</section>
+<section id="Skills">
+    <h2>Skills</h2>
+</section>
+<section id="Projects">
+    <h2>Projects</h2>
+    <ul></ul>
 </section>
 <section id = "Connect">
 <h2>Connect</h2>
 <ul>
     <li>
-    <a href="https://github.com/mari-no">GitHub</a>
+    <a href="https://github.com/mari-no"><img class="logo" src="images/GitHub.svg" alt ="GitHub Logo"/></a>
 
     </li>
     <li>
-    <a href="https://www.linkedin.com/in/marina-nosova-b399361bb">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/marina-nosova-b399361bb"><img class="logo" src="images/LinkedIn.svg" alt ="LinkedIn Logo"/></a>
     </li>
 </ul>
 </section>
+</div>
+
+
 </body>
 
 </html>
