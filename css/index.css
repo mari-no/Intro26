@@ -69,3 +69,28 @@ h2{
 #Connect ul{
     display:flex;
 }
+
+#skills {
+    max-width: 1600px;
+    margin: 15px auto;
+}
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+#skills li {
+    background: rgb(143, 235, 242);
+    padding: 10px 15px;
+    border-radius: 1px;
+}
+
+@media (max-width: 600px) {
+    #skills ul {
+        flex-direction: column;
+    }
+}
