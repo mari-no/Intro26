@@ -20,22 +20,24 @@ let usersMessage = event.target.usersMessage.value;
 
 console.log(usersName,usersEmail, usersMessage);
 
-newMessage.innerHTML = `<a href = " mailto: ${usersEmail}">  ${usersName} </a>
+newMessage.innerHTML = `<a href = "mailto: ${usersEmail}">  ${usersName} </a>
                         <span> ${usersMessage} </span>`;
 let editButton = document.createElement("button");
 editButton.innerText = "edit";
 editButton.type = "button";
 editButton.addEventListener("click", function(){
-    if (editButton.textContent === "edit"){let entry = editButton.parentNode;
-    let editedText = entry.querySelector("span");
-    console.log(editedText);
-    const input = document.createElement("input");
-    input.type = "text";
-    input.value = editedText.textContent;
-    entry.insertBefore(input, editedText);
-    console.log(input);
-    entry.removeChild(editedText);
-    editButton.textContent = "save";}
+    if (editButton.textContent === "edit")
+        {let entry = editButton.parentNode;
+        let editedText = entry.querySelector("span");
+        console.log(editedText);
+        const input = document.createElement("input");
+        input.type = "text";
+        input.value = editedText.textContent;
+        entry.insertBefore(input, editedText);
+        console.log(input);
+        entry.removeChild(editedText);
+        editButton.textContent = "save";
+    }
     else if (editButton.textContent === "save"){
         let entry = editButton.parentNode;
         const input = entry.querySelector("input");
