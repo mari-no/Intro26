@@ -89,8 +89,39 @@ h2{
     border-radius: 1px;
 }
 
+[name="leave_message"]{
+    width: 90%;
+     padding: 20px;
+     box-sizing: border-box;
+     max-width: 500px;
+     margin: 15px auto;
+}
+[name="leave_message"] input,
+[name="leave_message"] textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+[name="leave_message"] button {
+    padding: 12px 20px;
+    cursor: pointer;
+}
+button {
+    margin-left: 10px;
+}
 @media (max-width: 600px) {
     #skills ul {
         flex-direction: column;
     }
+    
+    [name="leave_message"]{
+      width: 95%;
+    }
+    [name="leave_message"] input,
+    [name="leave_message"] textarea,
+    [name="leave_message"] button {
+        font-size: 16px;
+}
 }
