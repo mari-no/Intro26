@@ -3,6 +3,10 @@ body{
     font-family: "Sofia", sans-serif;
     color: darkgreen; 
 }
+a{
+    color:blue;
+    text-decoration: underline;
+}
 header{
     text-align: center;
 }
@@ -12,6 +16,16 @@ h1{
 }
 .navigation{
     text-align: left;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.hamburger {
+    display: none;
+    font-size: 20px;
+    background: none;
+    border: 1px;
+    cursor: pointer;
 }
 #About{
     width: 500px;
@@ -39,10 +53,14 @@ h2{
     margin:15px auto;
     
 }
+#Connect ul{
+    display:flex;
+}
+
 #Experience{
-    background-color: rgb(44, 205, 151);
+    background-color: rgb(196, 233, 220);
     margin: 15px auto;
-    border: solid 1px teal;
+    border: solid 1px rgb(1, 91, 91);
     padding: 15px;
 }
 .job {
@@ -65,9 +83,6 @@ h2{
 .photo{
     width:120px;
      height:120px;
-}
-#Connect ul{
-    display:flex;
 }
 
 #skills {
@@ -124,4 +139,30 @@ button {
     [name="leave_message"] button {
         font-size: 16px;
 }
+   .hamburger {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+}
+#Projects ul{
+     display: flex;
+     gap: 10px;
+     margin: 20px;
+    padding: 20px;
+   
+    
+}
+#Projects li{
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 120px;
+    text-align: center;
 }
