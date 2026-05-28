@@ -131,19 +131,21 @@ function fetchData() {
                 const project = document.createElement("li");
                 const projectLink = document.createElement("a");
                 projectLink.href = repositories[i].html_url;
-                projectLink.innerText= repositories[i].name;
+                projectLink.innerText= ` link`;
                 projectLink.target = "_blank";
                 if (repositories[i].description){
                 project.innerText = `${repositories[i].name}:  ${repositories[i].description}`}
                 else {
                     project.innerText =  repositories[i].name ;
                 }
-                projectList.appendChild(projectLink);
+                project.appendChild(projectLink);
                 projectList.appendChild(project);
               
 }
             })
             .catch(error => {
+                const errorMessage = document.querySelector("#error-message");
+                errorMessage.innerText = "Something went wrong. Please try again later."
                 console.error("An error occured:", error)
             })
             
