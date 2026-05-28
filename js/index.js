@@ -105,3 +105,47 @@ heading.addEventListener("click", function () {
         heading.style.color = "red";
     }
 });
+
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector(".nav");
+hamburger.addEventListener("click",() => {
+    nav.classList.toggle("show");
+
+})
+function fetchData() {
+        fetch ('https://api.github.com/users/mari-no/repos')
+            .then(response => {
+                if (!response.ok){
+                    throw new Error('Request failed');
+
+                }
+                return response.json();
+
+            })
+            .then(repositories => {
+                console.log(repositories);
+                const projectSection = document.querySelector("#Projects");
+                const projectList = projectSection.querySelector("ul");
+         
+                for (let i=0; i<repositories.length; i++){
+                const project = document.createElement("li");
+                const projectLink = document.createElement("a");
+                projectLink.href = repositories[i].html_url;
+                projectLink.innerText= repositories[i].name;
+                projectLink.target = "_blank";
+                if (repositories[i].description){
+                project.innerText = `${repositories[i].name}:  ${repositories[i].description}`}
+                else {
+                    project.innerText =  repositories[i].name ;
+                }
+                projectList.appendChild(projectLink);
+                projectList.appendChild(project);
+              
+}
+            })
+            .catch(error => {
+                console.error("An error occured:", error)
+            })
+            
+}
+fetchData();
