@@ -1,0 +1,113 @@
+.stardos-stencil-regular {
+  font-family: "Stardos Stencil", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.images {
+  display: grid;
+  margin: 20px 350px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 5px;
+}
+.nav{
+    font-size: 18px;
+    color: aliceblue;
+    padding: 20px;
+}
+.nav a,
+.nav a:visited {
+    color: aliceblue;
+}
+[name="person_search"]{
+     width: 90%;
+     font-size: 24px;
+     color: aliceblue;
+     padding: 20px;
+     box-sizing: border-box;
+     max-width: 500px;
+     margin: 15px auto;
+}
+[name="starship_search"]{
+     width: 100%;
+     font-size: 24px;
+     color: aliceblue;
+     padding: 20px;
+     box-sizing: border-box;
+     max-width: 500px;
+     margin: 15px auto;
+}
+
+.images img {
+  width: 100%;
+  height: 150px;      
+  object-fit: cover; 
+  border-radius: 8px;
+}
+.sky{
+    position: relative;
+    height: 120px;
+    overflow: hidden;
+    background-color: rgb(1, 1, 28);
+}
+body{
+    background-color: rgb(38, 44, 77);
+    font-family: "Stardos Stencil", serif;
+}
+header{
+    font-size: 40px;
+    text-align: center;
+    color: silver;
+}
+h1{
+    font-size: 28px;
+    text-align: center;
+    color: silver;
+}
+.stardos-stencil-bold {
+  font-family: "Stardos Stencil", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+.star{
+    position: absolute;
+    left: -50px;
+    color: silver;
+    font-size: 20px;
+    text-shadow: 0 0 10px white;
+    top: 20px;
+    animation: shootingStar 6s linear infinite;
+}
+.star:nth-child(1){
+    top: 5px;
+}
+.star:nth-child(2){
+    top: 30px;
+}
+.star:nth-child(3){
+    top: 55px;
+}
+.star:nth-child(4){
+    top: 85px;
+}
+@keyframes shootingStar{
+    from{
+        transform: translateX(-80px);
+        left: -30px;
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    to{
+        transform: translate(100vw, 40px);
+        left: 100%;
+        opacity: 0;
+    }
+}
+.star:nth-child(1){ animation-delay: 0s; }
+.star:nth-child(2){ animation-delay: 1.5s; }
+.star:nth-child(3){ animation-delay: 3s; }
+.star:nth-child(4){ animation-delay: 4.5s; }
