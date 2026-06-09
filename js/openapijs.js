@@ -7,7 +7,7 @@ const personSearchPage = document.getElementById("character-results");
 const personSearch = document.querySelector("#person_search_button");
 
 
-    personSearch.addEventListener("click", function () {
+    personSearch.addEventListener("click", function (event) {
          event.preventDefault();
         const inputedPersonName =
             document.getElementById("personName").value;
@@ -109,7 +109,7 @@ const starshipSearchPage = document.getElementById("starship-results");
 const starshipSearch = document.querySelector("#starship_search_button");
 
 const errorMessageStar = document.querySelector("#error-message-star");
-    starshipSearch.addEventListener("click", function () {
+    starshipSearch.addEventListener("click", function (event) {
          event.preventDefault();
         const inputedStarshipName =
             document.getElementById("starshipName").value;
