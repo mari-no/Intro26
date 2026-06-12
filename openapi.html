@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
+    <title>May the Force be with you!</title>
+    <link rel = "stylesheet" href = "css/starwars.css"/>
+</head>
+<body>
+<div class = "sky">
+    <div class = "star">★</div>
+    <div class = "star">★</div>
+    <div class = "star">★</div>
+    <div class = "star">★</div>
+</div>
+<header>Star Wars Fans Hub</header>
+<div class = "images">
+    <img class="photo" src ="images/baby_yoda.jpeg" alt="Baby yoda" />
+    <img class="photo" src ="images/republic_gunship.jpg" alt="Republic gunship" />
+</div>
+<ul class = "nav">
+        <li><a href="index.html">Back home</a></li>
+        <li><a href="#person_search">Character Search</a></li> 
+        <li><a href="#starship_search">Starship Search</a></li> 
+</ul>
+<h1>May the Force be with you</h1>
+<form name ="person_search" id ="person_search">
+
+        <br>
+            <label>Look up your favorite character:
+            <input type = "text" id = "personName"  required placeholder= "Enter the name">
+            </label>
+
+        <br>
+            <button id ="person_search_button" type = "submit">Search</button>
+ <div id = "error-message"></div>
+ <ul id="character-results"></ul>
+</form>
+<form name ="starship_search" id ="starship_search">
+
+        <br>
+            <label>Look up your favorite starship:
+            <input type = "text" id= "starshipName" name=" starshipName" required placeholder= "Enter the name">
+            </label>
+
+        <br>
+            <button id="starship_search_button" type = "submit">Search</button>
+    <div id = "error-message-star"></div>
+    <ul id="starship-results"></ul>
+ </form>
+<script src = "js/openapijs.js"></script>
+</body>
+</html>
